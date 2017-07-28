@@ -53,7 +53,7 @@ namespace SJD.DAL
 			SqlParameter[] parameters = {
 					new SqlParameter("@RecruitTitle", SqlDbType.NVarChar,50),
 					new SqlParameter("@RecruitContent", SqlDbType.Text),
-					new SqlParameter("@RecruitTime", SqlDbType.date,3)};
+					new SqlParameter("@RecruitTime", SqlDbType.Date,3)};
 			parameters[0].Value = model.RecruitTitle;
 			parameters[1].Value = model.RecruitContent;
 			parameters[2].Value = model.RecruitTime;
@@ -82,7 +82,7 @@ namespace SJD.DAL
 			SqlParameter[] parameters = {
 					new SqlParameter("@RecruitTitle", SqlDbType.NVarChar,50),
 					new SqlParameter("@RecruitContent", SqlDbType.Text),
-					new SqlParameter("@RecruitTime", SqlDbType.date,3),
+					new SqlParameter("@RecruitTime", SqlDbType.Date,3),
 					new SqlParameter("@RecruitId", SqlDbType.Int,4)};
 			parameters[0].Value = model.RecruitTitle;
 			parameters[1].Value = model.RecruitContent;
