@@ -127,6 +127,10 @@
       <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
       <Name>DBUtility</Name>
     </ProjectReference>
+    <ProjectReference Include="..\IDal\IDal.csproj">
+      <Project>{a880fd40-c3fb-44aa-b151-551a8fc4bc35}</Project>
+      <Name>IDal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Name>Model</Name>
       <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
@@ -138,6 +142,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="News.cs" />
+    <Compile Include="OtherClass.cs" />
     <Compile Include="Picture.cs" />
     <Compile Include="Production.cs" />
     <Compile Include="Recruit.cs" />

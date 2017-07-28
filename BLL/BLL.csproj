@@ -121,6 +121,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="News.cs" />
+    <Compile Include="OtherBll.cs" />
     <Compile Include="Picture.cs" />
     <Compile Include="Production.cs" />
     <Compile Include="Recruit.cs" />
@@ -129,9 +130,17 @@
     <Compile Include="UserManagerType.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DalFactory\DalFactory.csproj">
+      <Project>{831a04f6-6cc2-41c9-b02a-05624bde78cc}</Project>
+      <Name>DalFactory</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{9FE00521-3A8B-42B1-814E-585E99407B2E}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDal\IDal.csproj">
+      <Project>{a880fd40-c3fb-44aa-b151-551a8fc4bc35}</Project>
+      <Name>IDal</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>

@@ -10,7 +10,7 @@ namespace SJD.BLL
 	/// </summary>
 	public partial class Picture
 	{
-		private readonly SJD.DAL.Picture dal=new SJD.DAL.Picture();
+		//private readonly SJD.DAL.Picture dal=new SJD.DAL.Picture();
 		public Picture()
 		{}
 		#region  BasicMethod
