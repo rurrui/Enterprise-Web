@@ -10,7 +10,7 @@ namespace SJD.BLL
 	/// </summary>
 	public partial class Solution
 	{
-		private readonly SJD.DAL.Solution dal=new SJD.DAL.Solution();
+		//private readonly SJD.DAL.Solution dal=new SJD.DAL.Solution();
 		public Solution()
 		{}
 		#region  BasicMethod

@@ -8,7 +8,9 @@ namespace SJD.Model
 	public partial class Production
 	{
 		public Production()
-		{}
+		{
+            
+        }
 		#region Model
 		private int _proid;
 		private string _protitle;

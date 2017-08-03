@@ -40,7 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="INews.cs" />
     <Compile Include="IPicture.cs" />
+    <Compile Include="IProduction.cs" />
+    <Compile Include="ISolution.cs" />
+    <Compile Include="IUserManager.cs" />
+    <Compile Include="IUserManagerType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,7 +10,7 @@ namespace SJD.BLL
 	/// </summary>
 	public partial class Production
 	{
-		private readonly SJD.DAL.Production dal=new SJD.DAL.Production();
+		//private readonly SJD.DAL.Production dal=new SJD.DAL.Production();
 		public Production()
 		{}
 		#region  BasicMethod

@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background:url("../images/subtle_grunge.png")/*tpa=http://www.koal.com/koal_main/images/subtle_grunge.png*/; width:100%; font-family:'微软雅黑';}
+
+#top{ width:100%; height:111px; height:auto; min-height:111px; margin:auto;}
+
+
+
+.nav_all{ width:100%; height:111px; position:absolute; top:0; left:0; margin:auto; z-index:100;}
+.nav_all_in{ background:url("../images/nav-in.jpg")/*tpa=http://www.koal.com/koal_main/images/nav-in.jpg*/ repeat-x;}
+.nav{ width:1000px; height:91px; margin-left:auto; margin-right:auto; margin-top:20px; background:url("../images/nav_bg.png")/*tpa=http://www.koal.com/koal_main/images/nav_bg.png*/ no-repeat; z-index:999999;}
+.nav_in{ width:1000px; height:91px; margin-left:auto; margin-right:auto; margin-top:20px; z-index:999999; }
+#logo{ background:url("../images/logo_bg.jpg")/*tpa=http://www.koal.com/koal_main/images/logo_bg.jpg*/ right center no-repeat; width:276px; height:91px; float:left; overflow:hidden; margin-right:72px;}
+.nav_wd{ width:650px; height:77px; float:left; margin-top:10px; vertical-align:middle;}
+.h_navlist, .h_navlist1{ float:left; font-size:14px; font-weight:bold; line-height:30px; width:650px;}
+	.h_navlist li{ float:left; background:url("../images/nav_libg.jpg")/*tpa=http://www.koal.com/koal_main/images/nav_libg.jpg*/ right no-repeat; text-align:center; vertical-align: middle;}
+	.h_navlist1 li{ float:left; background:url("../images/nav_libg1.jpg")/*tpa=http://www.koal.com/koal_main/images/nav_libg1.jpg*/ right no-repeat; text-align:center; vertical-align: middle;}
+	.h_navlist ul li a, .h_navlist1 ul li a{ color:#414141; padding:26px 5px; float:left; width:80px; height:24px; line-height:24px;}
+	.h_navlist ul li a:hover, .h_navlist1 ul li a:hover{ color:#fff; float:left; padding:26px 5px; width:80px; height:24px; line-height:24px; background: url("../images/nav_hover.png")/*tpa=http://www.koal.com/koal_main/images/nav_hover.png*/ no-repeat;}
+	
+	/*xuxiaofeng*/
+	.hover_menu{ color:#fff !important; float:left; padding:26px 5px; width:80px; height:24px; line-height:24px; background: url("../images/nav_hover.png")/*tpa=http://www.koal.com/koal_main/images/nav_hover.png*/ no-repeat;}
+	.hover_menu1{ color:#fff !important; float:left; padding:26px 5px; width:80px; height:24px; line-height:24px; background: url("../images/nav_hover.png")/*tpa=http://www.koal.com/koal_main/images/nav_hover.png*/ no-repeat;}
+
+	/*xuxiaofeng*/
+
+#a .hidden_nav{ display:none; width:222px; height:100px; height:auto; min-height:100px; z-index:99999; position:absolute; top:76px; left:0;}
+#a .hidden_nav-s{ display:none; width:172px; height:100px; height:auto; min-height:100px; z-index:99999; position:absolute; top:76px; left:0;}
+
+	#a .hidden_nav .hidden_top{ width:222px; height:11px; background:url("../images/hidden_top.png")/*tpa=http://www.koal.com/koal_main/images/hidden_top.png*/ no-repeat !important; padding:0; margin:0;}
+	#a .hidden_nav .hidden_bottom{width:222px; height:7px; background:url("../images/hidden_bottom.png")/*tpa=http://www.koal.com/koal_main/images/hidden_bottom.png*/ no-repeat !important; padding:0; margin:0;}
+	#a .hidden_nav-s .hidden_top{ width:172px; height:11px; background:url("../images/hidden-s_top.png")/*tpa=http://www.koal.com/koal_main/images/hidden-s_top.png*/ no-repeat !important; padding:0; margin:0;}
+	#a .hidden_nav-s .hidden_bottom{width:172px; height:7px; background:url("../images/hidden-s_bottom.png")/*tpa=http://www.koal.com/koal_main/images/hidden-s_bottom.png*/ no-repeat !important; padding:0; margin:0;}
+
+
+	#a .hidden_nav dl{ width:200px; padding:0 11px; font-size:12px; background:#bb1b23;}	
+	#a .hidden_nav dl dd{ width:200px; height:22px !important; line-height:22px; padding:4px 0; border-bottom:#ab1119 1px dashed;}
+	#a .hidden_nav dl dd a{ width:200px; height:22px !important; line-height:22px; color: #F63; font-size:12px; padding:0; font-weight:400;}
+	#a .hidden_nav dl dd a:hover, #a .hidden_nav-s dl dd a:hover{ height:22px !important; line-height:22px; color:#FFF; font-size:12px; background:none !important; padding:0;}
+
+	#a .hidden_nav-s dl{ width:150px; padding:0 11px; font-size:12px; background:#bb1b23;}	
+	#a .hidden_nav-s dl dd{ width:150px; height:22px !important; line-height:22px; padding:4px 0; border-bottom:#ab1119 1px dashed;}
+	#a .hidden_nav-s dl dd a{ width:150px; height:22px !important; line-height:22px; color: #F63; font-size:12px; padding:0; font-weight:400;}
+
+.content{ width:1000px; height:200px; height:auto; min-height:200px; overflow:hidden; margin:auto; margin-top:10px;}
+.main_lft{ width:540px; height:370px; margin-right:20px; float:left;}
+.main_rgt{ width:435px; float:left; height:370px;}
+.title{ height:26px; background:url("../images/main_titbg.jpg")/*tpa=http://www.koal.com/koal_main/images/main_titbg.jpg*/ left center no-repeat; margin-left:10px; padding-left:20px;}
+	.title h3{ height:24px; line-height:24px; font-size:15px; color:#bb1b23; float:left; padding-right:15px;}
+	.title h4{ height:17px; font-weight:400; font-size:12px; color:#956330; float:left; padding-top:6px;}
+	.title .more{ width:25px; height:25px; float:right;}
+	.title .more a{ background:url("../images/more.jpg")/*tpa=http://www.koal.com/koal_main/images/more.jpg*/ no-repeat; width:25px; height:25px; display:block;}
+	.title .more a:hover{ background:url("../images/more_hover.jpg")/*tpa=http://www.koal.com/koal_main/images/more_hover.jpg*/; width:25px; height:25px;}
+.news_mod{ width:520px; height:324px; padding:10px;}
+.imp_news{ width:520px; height:150px; border-bottom:1px solid #b5b5b5; margin:0; padding:0;}
+	.imp_img{ width:165px; height:105px; border:2px solid #b5b5b5; margin-top:5px; padding:10px; float:left; margin-right:20px;}
+		.imp_img_m{ width:165px; height:105px; overflow:hidden;}
+			.imp_img_m img{ width:165px;}
+	.imp_news_wd{ width:310px; height:150px; float:left;}
+		.imp_new_title{ width:310px; height:24px; line-height:24px; margin-bottom:5px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:14px; font-weight:bold; color:#bb1b23; }
+		.imp_news_textarea{ width:310px; height:72px; line-height:24px; font-size:12px; color:#414141; overflow:hidden;}
+		.news_all{ width:110px; height:30px; float:right;}
+		.news_all a{ width:110px; height:30px; display:block; background:url("../images/news_all.jpg")/*tpa=http://www.koal.com/koal_main/images/news_all.jpg*/ no-repeat;}
+		.news_all a:hover{ width:110px; height:30px; display:block; background:url("../images/news_all_hover.jpg")/*tpa=http://www.koal.com/koal_main/images/news_all_hover.jpg*/ no-repeat;}
+.news_list{ width:520px; height:180px;}
+	.news_list ul li{ height:22px; border-bottom:1px dotted #b5b5b5; line-height:22px; padding:5px 0 5px 10px; background:url("../images/list_bg.jpg")/*tpa=http://www.koal.com/koal_main/images/list_bg.jpg*/ no-repeat left center;}
+	.news_list ul li a{ float:left; color:#414141; width:520px;}
+	.news_list ul li a:hover{ float:left; color: #F63; width:520px;}
+	.news_list ul li a h4{ float:left; width:420px; height:22px; overflow: hidden; white-space:nowrap; text-overflow:ellipsis; font-size:12px; font-weight:400;}
+	.news_list ul li a cite{ width:80px; height:22px; float:right;}
+.contact_mod{ width:410px; height:304px; background:#f0e1c7; margin-top:10px; padding:10px;}
+.contact_add{ width:390px; height:264px; background:#e7d6b8; padding:20px 10px; overflow:hidden;}
+	.contact_add p { width:390px; height:22px; line-height:22px;}
+	.contact_add h5{ color:#bb1b23; font-weight:bold; font-size:14px;}
+	
+.product_mod{ width:1000px; height:250px; float:left; margin-top:10px;}
+.product_list{ width:960px; height:184px; border:5px solid }
+#demo1 {
+ float: left;
+}
+#demo2 {
+float: left;
+}
+#indemo {
+float: left;
+width: 800%;
+}
+.move-pro{ width:992px; height:200px; margin:auto; border:4px #ccc solid; margin-top:10px;overflow:hidden;}
+.scroll-img{ float: left;height:151px; width:968px; width:auto; min-width:968px; margin:23px 0; overflow:hidden;}
+		.scroll-img ul {height:159px;LIST-STYLE-TYPE: none;overflow: hidden;}
+		.scroll-img ul li{ width:150px; height:129px; padding:10px; border:1px #ccc solid; float:left; margin:0 11px; overflow:hidden; background:#F5F5F5;}
+		.scroll-img ul li img{ height:129px; width:150px;}
+		
+.foot{ width:100%; background:url("../images/foot-bg.png")/*tpa=http://www.koal.com/koal_main/images/foot-bg.png*/ no-repeat center; height:236px; overflow:hidden;}
+.foot-in{ width:100%; background:url("../images/footin-bg.png")/*tpa=http://www.koal.com/koal_main/images/footin-bg.png*/ repeat-x; height:236px; overflow:hidden;}
+
+.foot-content{ width:1000px; height:236px; margin:auto;}
+.fr-link{ width:650px; height:146px; float:right; margin-top:60px;}
+	.fr-link h3{ width:70px; height:30px; float:right; color:#fff; font-size:14px; font-weight:bold; line-height:30px;}
+	.fr-link h4{color: #956330;; font-size: 12px; font-weight: 400; height: 17px; padding-top: 6px; float:right; line-height:17px; margin-top:4px;}
+.link-mod{ height:90px; width:650px; float:right; margin-top:10px;  line-height:30px;}
+	.link-mod a{ color: #CCC; float:right; margin-left:20px;}
+	.link-mod a:hover{ color: #CCC; float:right; margin-left:20px; color:#F63;}
+.type-right{ height:30px; width:980px; color: #666; padding-left:20px; float:left; line-height:30px;}
+
+
+
+
+/* ------------------------------flexslider ----------------------------------*/
+.flexslider{ position:relative; height:540px; overflow:hidden; background:url("../images/loading.gif")/*tpa=http://www.koal.com/koal_main/images/loading.gif*/ 50% no-repeat;}
+.slides{position:relative; z-index:1;}
+	
+.slides li{height:540px;}
+.flex-control-nav{position:absolute; bottom:10px; right:50px; z-index:50; width:200px; text-align:center;}
+.flex-control-nav li{display: inline-block; width:14px; height:14px; margin:0 5px; *display:inline; zoom:1;}
+.flex-control-nav a{ display:inline-block; width:14px; height:14px; line-height:40px; overflow:hidden; background:url("../images/dot.png")/*tpa=http://www.koal.com/koal_main/images/dot.png*/ right 0 no-repeat; cursor:pointer;}
+.flex-control-nav .flex-active{background-position:0 0;}
+
+.flex-direction-nav{position:absolute;  z-index:53; width:100%; top:45%;}
+.flex-direction-nav li a{display:block; width:50px; height:50px; overflow:hidden; cursor:pointer; position:absolute;}
+.flex-direction-nav li a.flex-prev{left:40px; background:url("../images/prev.png")/*tpa=http://www.koal.com/koal_main/images/prev.png*/ center center no-repeat;}
+.flex-direction-nav li a.flex-next{right:40px; background:url("../images/next.png")/*tpa=http://www.koal.com/koal_main/images/next.png*/ center center no-repeat;}
+
+
+.banner_show{  width:1356px; width:auto; min-width:1356px; height:120px; z-index:10; position:absolute; left:auto; bottom:0; background:url("../images/banner_show.png")/*tpa=http://www.koal.com/koal_main/images/banner_show.png*/ no-repeat center; overflow:hidden;}
+.rm-position{ width:10px; height:10px; position:relative; left:50%; top:50%}
+.read-more{ z-index:9999999; width:132px; height:35px; position:absolute; top:115px; left:-445px; display:block; cursor:pointer;}
+.read-more1{ z-index:9999999; width:132px; height:35px; position:absolute; top:115px; left:245px; display:block; cursor:pointer;}
+/*-------------------- end of flexslider---------------------------------------*/
+
+/*--pagination--*/
+.pagination{ padding: 2px; margin:15px 10px;}
+
+.pagination ul{ margin: 0; padding: 0; text-align: right; font-size: 12px;}
+
+.pagination li{ list-style-type: none; display: inline; padding-bottom: 1px; background:none; }
+
+.pagination a, .pagination a:visited{ padding: 0 5px; border: 1px solid #9aafe5; text-decoration: none;  color: #2e6ab1; }
+
+.pagination a:hover, .pagination a:active{ border: 1px solid #2b66a5; color: #000; background-color: lightyellow;}
+
+.pagination li.currentpage{ font-weight: bold; padding: 0 5px; border: 1px solid navy; background-color: #2e6ab1; color: #FFF;}
+
+.pagination li.disablepage{ padding: 0 5px; border: 1px solid #929292; color: #929292; background:none;}
+
+.pagination li.nextpage{ font-weight: bold;  background:none;}
+/*--end of pagination--*/
+
+.content-in{ width:1000px; height:200px; height:auto; min-height:200px; overflow:hidden; margin:auto; padding-top:10px; margin-top:20px; margin-bottom:20px;}
+.list-l{ width:220px; height:250px; height:auto; min-height:250px; overflow: hidden; margin-right:20px; float:left;}
+	.list-l .l-tit { color: #000000; height: 54px; padding: 0 0 0 78px; position: relative; width: 127px;}
+	.list-l .l-tit img { left: 8px; position: absolute; top: 0;}
+	.list-l .zh{ font-size:21px;}
+	.a-act{ background:url("../images/mc_act.jpg")/*tpa=http://www.koal.com/koal_main/images/mc_act.jpg*/ no-repeat;}
+	.mc { padding: 0 0 25px 0px; width: 220px;}
+		.mc ul li { border-bottom:1px #ccc solid; height: 40px; line-height:40px;}
+		.mc a { color: #6D6D6D; display: block; text-indent: 2em; height:40px;}
+		.mc a:hover, .mc a.act { background: url("../images/mc_act.jpg")/*tpa=http://www.koal.com/koal_main/images/mc_act.jpg*/ no-repeat scroll left bottom; color: #FFFFFF;}
+.list-r{ width:760px; height:250px; height:auto; min-height:250px; overflow:hidden; float:left}
+	.list-rtit{border-radius:2px; -webkit-border-radius:2px; -o-border-radius:2px; text-align:right; height:28px; line-height:28px; padding-left:20px; font-size:14px; border-bottom:2px #C62128 solid;}
+	.list-rtit a{ font-size:14px;}
+	.list-r ul{ padding-left:20px;}
+	.list-r ul li{ height:30px; line-height:30px; border-bottom:1px #ccc dotted; list-style:none;}
+	.list-r ul li a cite{ float:right;}
+	.list-r ul li a span{ float:left;}
+	.list-r ul li a span img{ margin-left:10px;}
+.detail{ width:760px; height:100px; height:auto; min-height:100px; overflow:hidden;}
+	.detail h2{ font-size:18px; font-weight:bold; text-align:center; line-height:28px; }	
+	.detail h3{ font-size:12px; font-weight:400; text-align:center; line-height:24px; }	
+.detail-cont{ width:720px; padding:15px 25px; margin-top:15px; border-top:1px #ccc dashed; line-height:24px;}
+.contact-mod{ width:740px; padding:10px; height:150px; background:#f4ede6;}
+.contact-mm{ width:700px; padding:10px 10px 10px 30px; height:130px; background:#f1e2d4; color:}
+	.contact-mm h4{ height:24px; line-height:24px; font-size:12px; float:left; font-weight:400; width:520px;}
+	.contact-mm h3{ font-size:14px; width:100px; float:left; font-weight:bold; text-align:left}
+	
+.banner-page{ height:224px; width:1000px; width:auto; min-width:1000px; margin:auto !important; overflow:hidden;}
+.banner-pagepic1{ height:224px; width:1000px; width:auto; min-width:1000px; overflow:hidden; background:url("../images/banner-page1.jpg")/*tpa=http://www.koal.com/koal_main/images/banner-page1.jpg*/ center no-repeat;}
+.banner-pagepic2{ height:224px; width:1000px; width:auto; min-width:1000px; overflow:hidden; background:url("../images/banner-page2.jpg")/*tpa=http://www.koal.com/koal_main/images/banner-page2.jpg*/ center no-repeat;}
+.banner-pagepic3{ height:224px; width:1000px; width:auto; min-width:1000px; overflow:hidden; background:url("../images/banner-page3.jpg")/*tpa=http://www.koal.com/koal_main/images/banner-page3.jpg*/ center no-repeat;}
+.banner-pagepic4{ height:224px; width:1000px; width:auto; min-width:1000px; overflow:hidden; background:url("../images/banner-page4.jpg")/*tpa=http://www.koal.com/koal_main/images/banner-page4.jpg*/ center no-repeat;}
+.banner-pagepic5{ height:224px; width:1000px; width:auto; min-width:1000px; overflow:hidden; background:url("../images/banner-page5.jpg")/*tpa=http://www.koal.com/koal_main/images/banner-page5.jpg*/ center no-repeat;}
+.banner-pagepic6{ height:224px; width:1000px; width:auto; min-width:1000px; overflow:hidden; background:url("../images/banner-page6.jpg")/*tpa=http://www.koal.com/koal_main/images/banner-page6.jpg*/ center no-repeat;}
+.banner-pagepic7{ height:224px; width:1000px; width:auto; min-width:1000px; overflow:hidden; background:url("../images/banner-page7.jpg")/*tpa=http://www.koal.com/koal_main/images/banner-page7.jpg*/ center no-repeat;}
+
+
+.case-tit{ height:30px; height:auto; min-height:30px; background: #e0dfdf; color:#603; font-size:14px; font-weight:bold; padding-left:20px; line-height:30px; margin-bottom:10px;}
+.detail-cont img{ width:720px;}
+.detail-cont table{ border:1px #414141 solid; width:100%; background: #FAFAFA;}
+.detail-cont tr{ height:30px; line-height:30px; text-align:center; vertical-align: middle;}
+.detail-cont td{ border:1px #414141 solid;}
+.download-img{ width:165px !important; height:48px;}
+
+.com-ul{ height:30px; margin-bottom:10px; background: #FFE8E8; padding-left:20px; line-height:30px;}
+.com-ul1{ height:30px; margin-bottom:10px; background: #FFEFE8; padding-left:20px; line-height:30px;}
+.com-ul h3, .com-ul1 h3{ font-size:16px; font-weight:bold; color:#F00; width:130px; float:left; line-height:30px;}
+.com-ul h4,  .com-ul1 h4{ float:left; width:550px; line-height:30px; font-weight:400;}
+
+
+.addr-mod{ padding-left:40px; margin-bottom:20px;}
+	.addr-mod strong{ color:#C60;}
+	.addr-mod p{ margin:5px 0;}

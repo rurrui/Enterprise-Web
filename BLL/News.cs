@@ -10,7 +10,7 @@ namespace SJD.BLL
 	/// </summary>
 	public partial class News
 	{
-		private readonly SJD.DAL.News dal=new SJD.DAL.News();
+		//private readonly SJD.DAL.News dal=new SJD.DAL.News();
 		public News()
 		{}
 		#region  BasicMethod

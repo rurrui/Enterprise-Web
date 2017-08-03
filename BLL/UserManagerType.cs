@@ -10,7 +10,7 @@ namespace SJD.BLL
 	/// </summary>
 	public partial class UserManagerType
 	{
-		private readonly SJD.DAL.UserManagerType dal=new SJD.DAL.UserManagerType();
+		//private readonly SJD.DAL.UserManagerType dal=new SJD.DAL.UserManagerType();
 		public UserManagerType()
 		{}
 		#region  BasicMethod
