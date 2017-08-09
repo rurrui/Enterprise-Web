@@ -64,5 +64,13 @@ namespace SJD.DalFactory
             Object obj = asm.CreateInstance(temp2[0]);
             return obj as SJD.IDal.IUserManagerType;
         }
+        public static SJD.IDal.IRecruit GetRecruit()
+        {
+            string temp = System.Configuration.ConfigurationManager.AppSettings["RecruitDal"];
+            string[] temp2 = temp.Split(',');
+            Assembly asm = Assembly.Load(temp2[1]);
+            Object obj = asm.CreateInstance(temp2[0]);
+            return obj as SJD.IDal.IRecruit;
+        }
     }
 }

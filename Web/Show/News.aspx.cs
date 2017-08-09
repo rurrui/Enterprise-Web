@@ -11,10 +11,41 @@ namespace SJD.Web.Show
 {
     public partial class News : System.Web.UI.Page
     {
+        protected string strTopSoTitle { get; set; }
+        protected string strPTitle { get; set; }
         protected string pageBar { get; set; }
         protected string strHtml { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+
+
+            SJD.BLL.Production proBll = new BLL.Production();
+            DataTable dt0 = proBll.GetAllList().Tables[0];
+            StringBuilder sbPTitle = new StringBuilder();
+            foreach (DataRow row in dt0.Rows)
+            {
+
+                //sbTitle.AppendFormat("<li><a href='pro-detail.aspx?id={0}'>{1}</a></li>", Convert.ToInt32(row["ProId"]), row["ProTitle"].ToString());
+                sbPTitle.AppendFormat("<dd><a href='pro-detail.aspx?id={0}'>{1}</a></dd>", Convert.ToInt32(row["ProId"]), row["ProTitle"].ToString());
+            }
+            strPTitle = sbPTitle.ToString();
+
+
+
+
+            SJD.BLL.Solution soBll = new BLL.Solution();
+            DataTable dtso = soBll.GetAllList().Tables[0];
+
+            StringBuilder sbTopSoTitle = new StringBuilder();
+            foreach (DataRow row in dtso.Rows)
+            {
+
+                sbTopSoTitle.AppendFormat("<dd><a href='Solution-Detail.aspx?id={0}'>{1}</a></dd>", Convert.ToInt32(row["SoluTionId"]), row["SolutionTitle"].ToString());
+            }
+
+            strTopSoTitle = sbTopSoTitle.ToString();
+
+
             SJD.BLL.News newBll = new BLL.News();
             //分页
             int pageIndex = 1;

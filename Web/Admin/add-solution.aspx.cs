@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SJD.Web.Admin
 {
-    public partial class add_solution : System.Web.UI.Page
+    public partial class add_solution : MyBasePage
     {
         protected string Msg { get; set; }
         protected void Page_Load(object sender, EventArgs e)

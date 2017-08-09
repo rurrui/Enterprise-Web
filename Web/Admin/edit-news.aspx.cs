@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SJD.Web.Admin
 {
-    public partial class edit_news : System.Web.UI.Page
+    public partial class edit_news : MyBasePage
     {
         protected SJD.Model.News Model { get; set; }
         protected void Page_Load(object sender, EventArgs e)

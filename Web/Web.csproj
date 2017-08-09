@@ -78,25 +78,33 @@
   <ItemGroup>
     <Content Include="Admin\add-news.aspx" />
     <Content Include="Admin\add-pro.aspx" />
+    <Content Include="Admin\add-recruit.aspx" />
     <Content Include="Admin\add-solution.aspx" />
     <Content Include="Admin\add-user.aspx" />
     <Content Include="Admin\edit-news.aspx" />
     <Content Include="Admin\edit-pro.aspx" />
+    <Content Include="Admin\edit-recruit.aspx" />
     <Content Include="Admin\edit-solution.aspx" />
     <Content Include="Admin\edit-user.aspx" />
     <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\production.aspx" />
+    <Content Include="Admin\recruit.aspx" />
     <Content Include="Admin\solution.aspx" />
     <Content Include="Admin\Super-UserManager.aspx" />
-    <Content Include="Admin\UserManager.aspx" />
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\global.css" />
     <Content Include="css\layout.css" />
+    <Content Include="css\Login\H-ui.login.css" />
+    <Content Include="css\Login\H-ui.min.css" />
+    <Content Include="css\Login\iconfont.css" />
+    <Content Include="css\Login\style.css" />
     <Content Include="css\site.css" />
     <Content Include="Global.asax" />
+    <Content Include="images\4.jpg" />
     <Content Include="images\banner-page1.jpg" />
     <Content Include="images\banner-page2.jpg" />
     <Content Include="images\banner-page3.jpg" />
@@ -219,6 +227,9 @@
     <Content Include="images\sth-img\support1.gif" />
     <Content Include="images\subtle_grunge.png" />
     <Content Include="images\top1.gif" />
+    <Content Include="images\1.png" />
+    <Content Include="images\2.png" />
+    <Content Include="images\3.png" />
     <Content Include="images\xhd.jpg" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\excanvas.min.js" />
@@ -329,12 +340,14 @@
     <Content Include="Layui\layui\lay\modules\upload.js" />
     <Content Include="Layui\layui\lay\modules\util.js" />
     <Content Include="proImg\yd.jpg" />
+    <Content Include="Show\Contact.aspx" />
     <Content Include="Show\Index.aspx" />
-    <Content Include="Show\Introduction.html" />
+    <Content Include="Show\Info.aspx" />
     <Content Include="Show\News-Detail.aspx" />
     <Content Include="Show\News.aspx" />
     <Content Include="Show\pro-detail.aspx" />
     <Content Include="Show\Production.aspx" />
+    <Content Include="Show\Recruit.aspx" />
     <Content Include="Show\Solution-Detail.aspx" />
     <Content Include="Show\Solution.aspx" />
     <Content Include="Test\UploadPic.aspx" />
@@ -354,6 +367,13 @@
     </Compile>
     <Compile Include="Admin\add-pro.aspx.designer.cs">
       <DependentUpon>add-pro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-recruit.aspx.cs">
+      <DependentUpon>add-recruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-recruit.aspx.designer.cs">
+      <DependentUpon>add-recruit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\add-solution.aspx.cs">
       <DependentUpon>add-solution.aspx</DependentUpon>
@@ -381,6 +401,9 @@
     <Compile Include="Admin\delete-solution.ashx.cs">
       <DependentUpon>delete-solution.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\delete-user.ashx.cs">
+      <DependentUpon>delete-user.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\edit-news.aspx.cs">
       <DependentUpon>edit-news.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -394,6 +417,13 @@
     </Compile>
     <Compile Include="Admin\edit-pro.aspx.designer.cs">
       <DependentUpon>edit-pro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\edit-recruit.aspx.cs">
+      <DependentUpon>edit-recruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\edit-recruit.aspx.designer.cs">
+      <DependentUpon>edit-recruit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\edit-solution.aspx.cs">
       <DependentUpon>edit-solution.aspx</DependentUpon>
@@ -416,12 +446,29 @@
     <Compile Include="Admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MyBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Admin\production.aspx.cs">
       <DependentUpon>production.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\production.aspx.designer.cs">
       <DependentUpon>production.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\recruit.aspx.cs">
+      <DependentUpon>recruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\recruit.aspx.designer.cs">
+      <DependentUpon>recruit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\solution.aspx.cs">
       <DependentUpon>solution.aspx</DependentUpon>
@@ -436,13 +483,6 @@
     </Compile>
     <Compile Include="Admin\Super-UserManager.aspx.designer.cs">
       <DependentUpon>Super-UserManager.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\UserManager.aspx.cs">
-      <DependentUpon>UserManager.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\UserManager.aspx.designer.cs">
-      <DependentUpon>UserManager.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controls\CheckRight.ascx.cs">
       <DependentUpon>checkright.ascx</DependentUpon>
@@ -461,6 +501,9 @@
     <Compile Include="Admin\delete-pro.ashx.cs">
       <DependentUpon>delete-pro.ashx</DependentUpon>
     </Compile>
+    <Compile Include="delete-recruit.ashx.cs">
+      <DependentUpon>delete-recruit.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -472,6 +515,13 @@
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Show\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Show\GetProTitle.cs" />
     <Compile Include="Show\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -479,6 +529,13 @@
     </Compile>
     <Compile Include="Show\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Show\Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show\Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Show\News-Detail.aspx.cs">
       <DependentUpon>News-Detail.aspx</DependentUpon>
@@ -508,6 +565,13 @@
     <Compile Include="Show\Production.aspx.designer.cs">
       <DependentUpon>Production.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Show\Recruit.aspx.cs">
+      <DependentUpon>Recruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show\Recruit.aspx.designer.cs">
+      <DependentUpon>Recruit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Show\Solution-Detail.aspx.cs">
       <DependentUpon>Solution-Detail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -531,6 +595,9 @@
     </Compile>
     <Compile Include="Test\UploadPic.aspx.designer.cs">
       <DependentUpon>UploadPic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VCode.ashx.cs">
+      <DependentUpon>VCode.ashx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -591,6 +658,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\delete-solution.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\delete-user.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VCode.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="delete-recruit.ashx" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -43,6 +43,7 @@
     <Compile Include="INews.cs" />
     <Compile Include="IPicture.cs" />
     <Compile Include="IProduction.cs" />
+    <Compile Include="IRecruit.cs" />
     <Compile Include="ISolution.cs" />
     <Compile Include="IUserManager.cs" />
     <Compile Include="IUserManagerType.cs" />

@@ -9,7 +9,7 @@ using System.Net.Http.Headers;
 
 namespace SJD.Web.Admin
 {
-    public partial class add_news : System.Web.UI.Page
+    public partial class add_news : MyBasePage
     {
         protected string Msg { get; set; }
         protected void Page_Load(object sender, EventArgs e)

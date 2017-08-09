@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace SJD.Web.Admin
 {
-    public partial class Super_UserManager : System.Web.UI.Page
+    public partial class Super_UserManager : MyBasePage
     {
         protected string PageBar { get; set; }
         protected string strHtml { get; set; }

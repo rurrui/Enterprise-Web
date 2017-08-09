@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SJD.Web.Admin
 {
-    public partial class add_pro : System.Web.UI.Page
+    public partial class add_pro : MyBasePage
     {
         protected string Route { get; set; }
         protected void Page_Load(object sender, EventArgs e)

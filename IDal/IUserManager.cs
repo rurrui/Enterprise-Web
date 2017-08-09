@@ -22,5 +22,6 @@ namespace SJD.IDal
         int GetRecordCount(string strWhere);
         DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex);
         DataSet GetUnionList();
+        bool Exists(SJD.Model.UserManager model, out int id, out int type);
     }
 }

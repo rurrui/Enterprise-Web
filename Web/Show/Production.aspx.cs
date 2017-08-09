@@ -11,12 +11,30 @@ namespace SJD.Web.Show
 {
     public partial class Production : System.Web.UI.Page
     {
+        protected string strTopSoTitle { get; set; }
         protected string strPTitle { get; set; }
         protected SJD.Model.Production pModel { get; set; }
         protected string strHtml { get; set; }
         protected string strTitle { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            SJD.BLL.Solution soBll = new BLL.Solution();
+            DataTable dtso = soBll.GetAllList().Tables[0];
+
+            StringBuilder sbTopSoTitle = new StringBuilder();
+            foreach (DataRow row in dtso.Rows)
+            {
+
+                sbTopSoTitle.AppendFormat("<dd><a href='Solution-Detail.aspx?id={0}'>{1}</a></dd>", Convert.ToInt32(row["SoluTionId"]), row["SolutionTitle"].ToString());
+            }
+
+            strTopSoTitle = sbTopSoTitle.ToString();
+
+
+
+
+
             SJD.BLL.Production proBll = new BLL.Production();
             DataTable dt = proBll.GetAllList().Tables[0];
             StringBuilder sbTitle = new StringBuilder();

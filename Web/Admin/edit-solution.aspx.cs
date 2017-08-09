@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SJD.Web.Admin
 {
-    public partial class edit_solution : System.Web.UI.Page
+    public partial class edit_solution : MyBasePage
     {
         protected SJD.Model.Solution Model { get; set; }
         protected void Page_Load(object sender, EventArgs e)

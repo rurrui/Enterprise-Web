@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SJD.Web.Admin
 {
-    public partial class edit_user : System.Web.UI.Page
+    public partial class edit_user : MyBasePage
     {
         protected SJD.Model.UserManager Model { get; set; }
         protected void Page_Load(object sender, EventArgs e)

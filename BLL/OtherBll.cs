@@ -34,10 +34,19 @@ namespace SJD.BLL
         {
             return dal.GetUnionList();
         }
+
+        public bool Exists(SJD.Model.UserManager model, out int id, out int type)
+        {
+            return dal.Exists(model,out id,out type);
+        }
     }
     public partial class UserManagerType
     {
         private readonly SJD.IDal.IUserManagerType dal = SJD.DalFactory.AbstractFactory.GetUserManagerType();
       
+    }
+    public partial class Recruit
+    {
+        private readonly SJD.IDal.IRecruit dal = SJD.DalFactory.AbstractFactory.GetRecruit();
     }
 }

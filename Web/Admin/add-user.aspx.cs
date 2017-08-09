@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SJD.Web.Admin
 {
-    public partial class add_user : System.Web.UI.Page
+    public partial class add_user : MyBasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

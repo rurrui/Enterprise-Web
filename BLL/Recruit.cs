@@ -10,7 +10,7 @@ namespace SJD.BLL
 	/// </summary>
 	public partial class Recruit
 	{
-		private readonly SJD.DAL.Recruit dal=new SJD.DAL.Recruit();
+		//private readonly SJD.DAL.Recruit dal=new SJD.DAL.Recruit();
 		public Recruit()
 		{}
 		#region  BasicMethod

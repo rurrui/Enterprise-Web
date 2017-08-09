@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SJD.Web.Admin
 {
-    public partial class edit_pro : System.Web.UI.Page
+    public partial class edit_pro : MyBasePage
     {
         protected SJD.Model.Production Model { get; set; }
         protected void Page_Load(object sender, EventArgs e)

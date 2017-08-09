@@ -22,15 +22,15 @@
                 <div id="logo" style="text-align: center; line-height: 95px">
                     <!--<img src="images/logo_img.png" style="width: 220px; height: 55px; margin-left: 25px;
                              margin-top: 18px;" />-->
-                    <p style="font-size: 20px">
-                        <a href="Index.aspx" style="display: block">思及达</a>
+                    <p style="font-size: 15px">
+                        <a href="Index.aspx" style="display: block">晋城市思及达商贸有限公司</a>
                     </p>
                 </div>
                 <!--end of logo-->
                 <div class="nav_wd">
                     <div class="h_navlist" id="a">
                         <ul>
-                            <li><a class="hover_menu" href="Index.aspx">首 页</a></li>
+                            <li><a href="Index.aspx">首 页</a></li>
                             <li style="position: relative;">
                                 <a href="Production.aspx">产品中心</a>
                                 <div class="hidden_nav">
@@ -42,7 +42,7 @@
                                 </div>
                             </li>
                             <li style="position: relative;">
-                                <a href="Solution.aspx">解决方案</a>
+                                <a class="hover_menu" href="Solution.aspx">解决方案</a>
                                 <div class="hidden_nav">
                                     <div class="hidden_top"></div>
                                     <dl>
@@ -53,58 +53,26 @@
                                 </div>
                             </li>
                          
-                            <li style="position: relative;">
-                                <a href="channel.php.htm">渠道合作</a>
-                                <div class="hidden_nav-s">
-                                    <div class="hidden_top"></div>
-                                    <dl>
-
-                                        <dd>
-                                            <a href="channel.php.htm">渠道与合作</a>
-                                        </dd>
-                                        <dd>
-                                            <a href="channel2.php.htm">渠道部联系方式</a>
-                                        </dd>
-
-                                    </dl>
-                                    <div class="hidden_bottom"></div>
-                                </div>
+                           <li style="position:relative;">
+                                <a href="Recruit.aspx">招贤纳士</a>
                             </li>
-                            <li style="position: relative;">
-                                <a href="support.php.htm">技术支持</a>
-                                <div class="hidden_nav-s">
-                                    <div class="hidden_top"></div>
-                                    <dl>
-
-                                        <dd>
-                                            <a href="support.php.htm">技术问答</a>
-                                        </dd>
-                                        <dd>
-                                            <a href="service.php.htm">客服中心</a>
-                                        </dd>
-
-                                    </dl>
-                                    <div class="hidden_bottom"></div>
-                                </div>
+                            <li style="position:relative;">
+                                <a href="Contact.aspx">联系我们</a>
+                               
                             </li>
                             <li style="background: none !important; position: relative;">
-                                <a href="Introduction.html">关于公司</a>
+                                <a href="Info.aspx">关于公司</a>
                                 <div class="hidden_nav-s">
                                     <div class="hidden_top"></div>
                                     <dl>
 
                                         <dd>
-                                            <a href="Introduction.html">公司介绍</a>
+                                            <a href="Info.aspx">公司介绍</a>
                                         </dd>
                                         <dd>
                                             <a href="News.aspx">新闻快讯</a>
                                         </dd>
-                                        <dd>
-                                            <a href="com-meeting.php.htm">公司公告</a>
-                                        </dd>
-                                        <dd>
-                                            <a href="com-honer.php.htm">资质荣誉</a>
-                                        </dd>
+                                       
                                     </dl>
                                     <div class="hidden_bottom"></div>
                                 </div>
@@ -202,11 +170,11 @@
             </div>
             <!--end of mc-->
             <div class="mb10px">
-                <a href="zhaopin.php.htm">
+                <a href="Recruit.aspx">
                     <img src="../images/link-pic1.jpg" />
                 </a>
             </div>
-            <a href="com-contact.php.htm">
+            <a href="Contact.aspx">
                  <img src="../images/link-pic2.jpg" />
             </a>
         </div>

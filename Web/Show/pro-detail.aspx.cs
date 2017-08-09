@@ -11,6 +11,7 @@ namespace SJD.Web.Show
 {
     public partial class pro_detail : System.Web.UI.Page
     {
+        protected string strTopSoTitle { get; set; }
         protected string strPTitle { get; set; }
         protected SJD.Model.Production Model { get; set; }
         protected string strTitle { get; set; }
@@ -33,6 +34,19 @@ namespace SJD.Web.Show
                 int id = int.Parse(Request["id"]);
                 Model = proBll.GetModel(id);
             }
+
+
+            SJD.BLL.Solution soBll = new BLL.Solution();
+            DataTable dtso = soBll.GetAllList().Tables[0];
+
+            StringBuilder sbTopSoTitle = new StringBuilder();
+            foreach (DataRow row in dtso.Rows)
+            {
+
+                sbTopSoTitle.AppendFormat("<dd><a href='Solution-Detail.aspx?id={0}'>{1}</a></dd>", Convert.ToInt32(row["SoluTionId"]), row["SolutionTitle"].ToString());
+            }
+
+            strTopSoTitle = sbTopSoTitle.ToString();
         }
     }
 }
