@@ -34,7 +34,7 @@ namespace SJD.Web.Admin
                         JavaScriptSerializer jser = new JavaScriptSerializer();
                         
                         context.Response.Write(jser.Serialize(new { code = 0, msg = "上传成功", data = new { src = $"../Admin/productionImg/{fileName}", title = fileName } }));
-                       // context.Response.Redirect("add-pro.aspx?path=../Admin/productionImg/" + fileName);
+                       
                     }
                 }
             }

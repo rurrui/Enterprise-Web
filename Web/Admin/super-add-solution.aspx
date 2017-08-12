@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="add-solution.aspx.cs" Inherits="SJD.Web.Admin.add_solution" %>
+﻿<%@ Page Language="C#" ValidateRequest="false" AutoEventWireup="true" CodeBehind="super-add-solution.aspx.cs" Inherits="SJD.Web.Admin.super_add_solution" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/site.css" rel="stylesheet" />
     <link href="../css/bootstrap-responsive.css" rel="stylesheet" />
@@ -31,35 +31,41 @@
                     <div class="nav-collapse">
                         <ul class="nav">
                             <li><a href="../Show/Index.aspx">主页</a></li>
-                            
-                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">新闻<b class="caret"></b></a>
+                             <li class="dropdown"><a href="Super-UserManager.aspx" class="dropdown-toggle" data-toggle="dropdown">人员<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="add-news.aspx">添加</a></li>
+                                    <li><a href="add-user.aspx">添加</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="Index.aspx">管理</a></li>
+                                    <li><a href="Super-UserManager.aspx">管理</a></li>
                                 </ul>
                             </li>
-                              <li class="dropdown"><a href="production.aspx" class="dropdown-toggle" data-toggle="dropdown">产品 <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="add-pro.aspx">添加</a></li>
-                                <li class="divider"></li>
-                                <li><a href="production.aspx">管理</a></li>
-                            </ul>
-                        </li>
-                         <li class="dropdown"><a href="solution.aspx" class="dropdown-toggle" data-toggle="dropdown">解决方案 <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="add-solution.aspx">添加</a></li>
-                                <li class="divider"></li>
-                                <li><a href="solution.aspx">管理</a></li>
-                            </ul>
-                        </li>
-                             <li class="dropdown"><a href="solution.aspx" class="dropdown-toggle" data-toggle="dropdown">招贤纳士 <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="add-recruit.aspx">添加</a></li>
-                                <li class="divider"></li>
-                                <li><a href="recruit.aspx">管理</a></li>
-                            </ul>
-                        </li>
+                            <li class="dropdown"><a href="super-news" class="dropdown-toggle" data-toggle="dropdown">新闻<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="super-add-news.aspx">添加</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="super-news.aspx">管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="super-production.aspx" class="dropdown-toggle" data-toggle="dropdown">产品 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="super-add-pro.aspx">添加</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="super-production.aspx">管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="super-solution.aspx" class="dropdown-toggle" data-toggle="dropdown">解决方案 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li ><a href="super-add-solution.aspx">添加</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="super-solution.aspx">管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="super-recruit.aspx" class="dropdown-toggle" data-toggle="dropdown">招贤纳士 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="super-add-recruit.aspx">添加</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="super-recruit.aspx">管理</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -72,21 +78,30 @@
                     <div class="well sidebar-nav" style="margin-top: 50px">
                         <ul class="nav nav-list">
                             
+                             <li class="nav-header"><i class="icon-wrench"></i>用户管理</li>
+                            
+                            <li ><a href="super-add-news.aspx">添加</a></li>
+                            <li ><a href="Super-UserManager.aspx">管理</a></li>
+
                             <li class="nav-header"><i class="icon-signal"></i>公司新闻</li>
-                            <li><a href="Index.aspx">管理</a></li>
-                            <li><a href="add-news.aspx">添加</a></li>
+                            
+                            <li><a href="super-add-news.aspx">添加</a></li>
+                            <li><a href="super-news.aspx">管理</a></li>
 
                             <li class="nav-header"><i class="icon-user"></i>公司产品</li>
-                            <li><a href="production.aspx">管理</a></li>
-                            <li><a href="add-pro.aspx">添加</a></li>
+                            
+                            <li><a href="super-add-pro.aspx">添加</a></li>
+                            <li><a href="super-production.aspx">管理</a></li>
 
                             <li class="nav-header"><i class="icon-user"></i>解决方案</li>
-                            <li><a href="solution.aspx">管理</a></li>
-                            <li class="active"><a href="add-solution.aspx">添加</a></li>
+                            
+                            <li class="active"><a href="super-add-solution.aspx">添加</a></li>
+                            <li><a href="super-solution.aspx">管理</a></li>
 
-                             <li class="nav-header"><i class="icon-user"></i>招贤纳士</li>
-                        <li><a href="recruit.aspx">管理</a></li>
-                        <li><a href="add-recruit.aspx">添加</a></li>
+                            <li class="nav-header"><i class="icon-user"></i>招贤纳士</li>
+                            
+                            <li><a href="super-add-recruit.aspx">添加</a></li>
+                            <li><a href="super-recruit.aspx">管理</a></li>
                         </ul>
                     </div>
                 </div>

@@ -91,6 +91,14 @@
     <Content Include="Admin\production.aspx" />
     <Content Include="Admin\recruit.aspx" />
     <Content Include="Admin\solution.aspx" />
+    <Content Include="Admin\super-add-news.aspx" />
+    <Content Include="Admin\super-add-recruit.aspx" />
+    <Content Include="Admin\super-add-solution.aspx" />
+    <Content Include="Admin\super-edit-news.aspx" />
+    <Content Include="Admin\super-edit-recruit.aspx" />
+    <Content Include="Admin\super-edit-solution.aspx" />
+    <Content Include="Admin\super-production.aspx" />
+    <Content Include="Admin\super-recruit.aspx" />
     <Content Include="Admin\Super-UserManager.aspx" />
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
@@ -350,6 +358,10 @@
     <Content Include="Show\Recruit.aspx" />
     <Content Include="Show\Solution-Detail.aspx" />
     <Content Include="Show\Solution.aspx" />
+    <Content Include="Admin\super-add-pro.aspx" />
+    <Content Include="Admin\super-edit-pro.aspx" />
+    <Content Include="Admin\super-news.aspx" />
+    <Content Include="Admin\super-solution.aspx" />
     <Content Include="Test\UploadPic.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -477,6 +489,62 @@
     <Compile Include="Admin\solution.aspx.designer.cs">
       <DependentUpon>solution.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\super-add-news.aspx.cs">
+      <DependentUpon>super-add-news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-add-news.aspx.designer.cs">
+      <DependentUpon>super-add-news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-add-recruit.aspx.cs">
+      <DependentUpon>super-add-recruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-add-recruit.aspx.designer.cs">
+      <DependentUpon>super-add-recruit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-add-solution.aspx.cs">
+      <DependentUpon>super-add-solution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-add-solution.aspx.designer.cs">
+      <DependentUpon>super-add-solution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-edit-news.aspx.cs">
+      <DependentUpon>super-edit-news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-edit-news.aspx.designer.cs">
+      <DependentUpon>super-edit-news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-edit-recruit.aspx.cs">
+      <DependentUpon>super-edit-recruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-edit-recruit.aspx.designer.cs">
+      <DependentUpon>super-edit-recruit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-edit-solution.aspx.cs">
+      <DependentUpon>super-edit-solution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-edit-solution.aspx.designer.cs">
+      <DependentUpon>super-edit-solution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-production.aspx.cs">
+      <DependentUpon>super-production.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-production.aspx.designer.cs">
+      <DependentUpon>super-production.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-recruit.aspx.cs">
+      <DependentUpon>super-recruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-recruit.aspx.designer.cs">
+      <DependentUpon>super-recruit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Super-UserManager.aspx.cs">
       <DependentUpon>Super-UserManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -585,6 +653,34 @@
     </Compile>
     <Compile Include="Show\Solution.aspx.designer.cs">
       <DependentUpon>Solution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-add-pro.aspx.cs">
+      <DependentUpon>super-add-pro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-add-pro.aspx.designer.cs">
+      <DependentUpon>super-add-pro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-edit-pro.aspx.cs">
+      <DependentUpon>super-edit-pro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-edit-pro.aspx.designer.cs">
+      <DependentUpon>super-edit-pro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-news.aspx.cs">
+      <DependentUpon>super-news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-news.aspx.designer.cs">
+      <DependentUpon>super-news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\super-solution.aspx.cs">
+      <DependentUpon>super-solution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\super-solution.aspx.designer.cs">
+      <DependentUpon>super-solution.aspx</DependentUpon>
     </Compile>
     <Compile Include="Test\upload.ashx.cs">
       <DependentUpon>upload.ashx</DependentUpon>
